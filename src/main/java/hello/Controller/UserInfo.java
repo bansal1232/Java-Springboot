@@ -22,6 +22,7 @@ public class UserInfo {
 
     @GetMapping("author/{authorId}")
     public Object getJoker(@PathVariable Integer authorId) {
+
         //Author author = new Author();
         List<Author> totalAuthors = authorRepository.findByAuthorId(authorId);
         System.out.println(totalAuthors);
